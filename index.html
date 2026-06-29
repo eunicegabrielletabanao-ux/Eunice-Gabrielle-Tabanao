@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header & Logo */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://picsum.photos/id/1035/1600/800') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 4rem 5%;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background: #e67e22;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 5%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .about-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #2c3e50;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Contact */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 5%;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            nav ul {
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">
+            <!-- Replace with your own logo/image path -->
+            <img src="pic/e.jpg" alt="My Logo" id="logo-img">
+            <h1>Eunice Gabrielle Tabanao</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to My Personal Website</h2>
+        <p>Every challenge you face is not a wall, but a doorway to growth. The setbacks you encounter are not signs of weakness, but reminders of your resilience. Keep moving forward, even when the path feels uncertain, because every step you take brings you closer to the version of yourself you’re meant to become. Believe in your strength, trust the process, and never forget — you are capable of more than you imagine.</p>
+        <button class="btn" id="greetBtn">HELLO NONOLIANS</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Yunis</h2>
+        <div class="about-content">
+            <img src="pic/t.jpg" alt="My Photo" class="about-img">
+            <div class="about-text">
+                <p> Hi Nonolians, my name is Eunice Gabrielle Tabanao. I grew up in a broken family, and as the panganay or eldest child, I carry a lot of responsibility. My experiences have shaped me to be strong, independent, and caring toward my siblings. Even though life has been challenging, I strive to turn those challenges into motivation to do better and support my family</p>
+                <br>
+
+                 <p>Life has not been easy for me, but I carry within me a strength that many will never understand. As the panganay, I have learned to stand tall even when the world feels heavy. Though my family is broken and my parents have built new lives, I am not defined by absence — I am defined by resilience. My grandmother’s love has been my anchor, and my own courage has been my guide.
+
+I may not have met my parents in person, but that does not make me less worthy of love, belonging, or success. My story is unique, and it proves that even in pain, hope can grow. I am not a victim of my circumstances; I am the author of my future. Every challenge I face is shaping me into someone stronger, wiser, and more compassionate.
+
+I choose to rise above the hurt. I choose to believe in myself. I choose to create a life filled with meaning, joy, and purpose. Being the panganay means I carry responsibility, but it also means I carry the power to inspire. My journey may be different, but it is mine — and I will walk it with pride, courage, and faith</p>
+
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background: #ecf0f1;">
+        <h2>KNOW MORE ABOUT ME</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>PEOPLE AROUND ME</h3>
+                <p>My family is very special to me. I live with my lola Nena, who takes care of us with kindness. My kuya Richard is my older brother, and he guides me like a role model. I also have two cousins, Andrew and Zaric, who make our days lively and full of fun. Together, they make my life happier and more meaningful.</p>
+            </div>
+            <div class="skill-card">
+                <h3>SPECIAL PEOPLE OF MY LIFE</h3>
+                <p> 
+ENHYPEN and Evan, thank you for giving us strength through your music and passion. Each of you has touched our hearts in unique ways, and together you’ve created memories that ENGENEs will treasure forever.
+
+Evan, your journey as Heeseung will always remain a precious part of ENHYPEN’s story, and we are proud to support you as you shine in your solo path. Your voice and artistry remind us to dream bigger and stay true to ourselves.
+                </p>
+            </div>
+            <div class="skill-card">
+                <h3>I LOVE</h3>
+                <p>Taking notes: Writing down key points during class or while reading.
+
+Reviewing lessons: Going over material regularly to reinforce memory.
+
+Making flashcards: Using cards to memorize vocabulary or concepts.
+
+Setting a schedule: Planning study time each day to stay consistent.
+
+Practicing past exams: Solving old test papers to prepare for upcoming exams.
+
+Group study: Learning with classmates to share ideas and explanations.
+
+Asking questions: Clarifying doubts with teachers or peers.
+
+Avoiding distractions: Studying in a quiet place without phones or social media.</p>
+         
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background: #ecf0f1;">
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>MY SOMEONE </h4>
+                <p>I want to introduce someone very special to me. He’s not only my manliligaw for the past month, but also a dedicated basketball player who puts his heart into every game. Even though we’re in a long-distance relationship, I feel close to him because of the way he makes me smile and inspires me with his passion. I’m truly proud of him — both on the court and in life. Keep shining, love, and know that I’m always cheering for you no matter the distance  
+
+                No matter how busy you get with training or games, I’ll always be here cheering for you — not just as a fan of your basketball journey, but as someone who truly cares about you. You’re winning my heart both on and off the court, CJ, and I’ll always support you in chasing your dreams. Keep shining, keep playing, and remember that I’ll always be your number one supporter.</p>
+
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <form class="contact-form" id="contactForm">
+            <input type="text" id="Eunice Gabrielle Tabanao" placeholder="Your Name" required>
+            <input type="email" id="eunicegabrielletabanao@gmail.com" placeholder="Your Email" required>
+            <textarea id="Every challenge you face is not a wall, but a doorway to growth. The setbacks you encounter are not signs of weakness, but reminders of your resilience. Keep moving forward, even when the path feels uncertain, because every step you take brings you closer to the version of yourself you’re meant to become. Believe in your strength, trust the process, and never forget — you are capable of more than you imagine." rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Eunice Gabrielle Tabanao. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Greet Button Function
+        const greetBtn = document.getElementById('greetBtn');
+        greetBtn.addEventListener('click', function() {
+            alert('👋 Hello! Thanks for visiting my website!');
+        });
+
+        // Contact Form Handler
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if(name && email && message) {
+                alert(`✅ Thank you ${name}! Your message has been received.\nWe will reply to ${email} soon.`);
+                contactForm.reset();
+            }
+        });
+
+        // Logo Image Change Example
+        const logoImg = document.getElementById('logo-img');
+        logoImg.addEventListener('mouseover', function() {
+            this.style.transform = 'rotate(360deg)';
+            this.style.transition = 'transform 0.6s ease';
+        });
+        logoImg.addEventListener('mouseout', function() {
+            this.style.transform = 'rotate(0deg)';
+        });
+    </script>
+</body>
+</html>
