@@ -16,13 +16,13 @@
         body {
             line-height: 1.6;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: black;
         }
 
         /* Header & Logo */
         header {
-            background: #2c3e50;
-            color: white;
+            background: black;
+            color: lightpink;
             padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
@@ -52,10 +52,11 @@
             list-style: none;
             display: flex;
             gap: 20px;
+
         }
 
         nav a {
-            color: white;
+            color: lightpink;
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -67,7 +68,8 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
-                        url('https://picsum.photos/id/1035/1600/800') center/cover no-repeat;
+                         url('https://picsum.photos/id/1035/1600/800') 
+                         center/cover no-repeat;
             color: white;
             text-align: center;
             padding: 4rem 5%;
@@ -76,6 +78,7 @@
         .hero h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+
         }
 
         .hero p {
@@ -88,7 +91,7 @@
             display: inline-block;
             padding: 0.7rem 1.5rem;
             background: #f39c12;
-            color: white;
+            color: lightpink;
             text-decoration: none;
             border-radius: 5px;
             transition: background 0.3s;
@@ -127,11 +130,14 @@
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid #2c3e50;
+
         }
 
         .about-text {
             flex: 1;
             min-width: 300px;
+            color: white;
+
         }
 
         /* Skills */
@@ -140,13 +146,34 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             text-align: center;
+            color: white;
         }
 
         .skill-card {
-            background: white;
+            background: black;
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* ✅ New Style for Final Page */
+        .final-page {
+            background: #111;
+            text-align: center;
+            padding: 4rem 5%;
+        }
+
+        .final-page h2 {
+            color: lightpink;
+            margin-bottom: 2rem;
+        }
+
+        .MYSCHOOL-img {
+            max-width: 100%;
+            height: 20%;
+            border-radius: 12px;
+            border: 4px solid lightpink;
+            box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
         }
 
         /* Contact */
@@ -169,7 +196,7 @@
         /* Footer */
         footer {
             background: #2c3e50;
-            color: white;
+            color:lightpink;
             text-align: center;
             padding: 1.5rem 5%;
             margin-top: 2rem;
@@ -190,7 +217,11 @@
             .hero h2 {
                 font-size: 1.8rem;
             }
+            .final-img {
+                max-width: 95%;
+            }
         }
+
     </style>
 </head>
 <body>
@@ -203,17 +234,29 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#school">MY SCHOOL</a></li> <!-- Added link to new page -->
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <h2>Welcome to My Personal Website</h2>
-        <p>Every challenge you face is not a wall, but a doorway to growth. The setbacks you encounter are not signs of weakness, but reminders of your resilience. Keep moving forward, even when the path feels uncertain, because every step you take brings you closer to the version of yourself you’re meant to become. Believe in your strength, trust the process, and never forget — you are capable of more than you imagine.</p>
+
+        <h2 style="color:black;">HELLO NONOLIANS,WELCOME TO MY 
+               PERSONAL WEBSITE!!</h2>
+
+         <h3 style="color: white;">
+
+            <p>Every challenge you face is not a wall, but a doorway to growth. The setbacks you encounter are not signs of weakness, but reminders of your resilience. Keep moving forward, even when the path feels uncertain, because every step you take brings you closer to the version of yourself you’re meant to become. Believe in your strength, trust the process, and never forget — you are capable of more than you imagine. </p><br>  
+
+        <p>Life is full of challenges, but every obstacle is also an opportunity to grow stronger, wiser, and more resilient. Remember that progress doesn’t always come in giant leaps — sometimes it’s the small, consistent steps that lead to the biggest transformations. When you feel tired or discouraged, pause and remind yourself why you started. Your dreams are worth the effort, and your future self will thank you for the persistence you show today.</p><br>
+
+<p>Don’t compare your journey to anyone else’s; your path is unique, and so are your strengths. Celebrate the victories, no matter how small, and learn from the setbacks without letting them define you. Each sunrise is a fresh chance to move closer to your goals, and each day is a gift to make a difference in your own life and in the lives of others.</p><br>
+
+<p>Keep believing in yourself, even when the road feels long. You are capable of more than you realize, and the courage you show now will inspire others too. Stay focused, stay positive, and keep moving forward — because the best chapters of your story are still waiting to be written.</p><br>
         <button class="btn" id="greetBtn">HELLO NONOLIANS</button>
     </section>
 
@@ -226,11 +269,22 @@
                 <p> Hi Nonolians, my name is Eunice Gabrielle Tabanao. I grew up in a broken family, and as the panganay or eldest child, I carry a lot of responsibility. My experiences have shaped me to be strong, independent, and caring toward my siblings. Even though life has been challenging, I strive to turn those challenges into motivation to do better and support my family</p>
                 <br>
 
-                 <p>Life has not been easy for me, but I carry within me a strength that many will never understand. As the panganay, I have learned to stand tall even when the world feels heavy. Though my family is broken and my parents have built new lives, I am not defined by absence — I am defined by resilience. My grandmother’s love has been my anchor, and my own courage has been my guide.
+                 <p>Life has not been easy for me, but I carry within me a strength that many will never understand. As the panganay, I have learned to stand tall even when the world feels heavy. Though my family is broken and my parents have built new lives, I am not defined by absence — I am defined by resilience. My grandmother’s love has been my anchor, and my own courage has been my guide.</p>
 
-I may not have met my parents in person, but that does not make me less worthy of love, belonging, or success. My story is unique, and it proves that even in pain, hope can grow. I am not a victim of my circumstances; I am the author of my future. Every challenge I face is shaping me into someone stronger, wiser, and more compassionate.
 
-I choose to rise above the hurt. I choose to believe in myself. I choose to create a life filled with meaning, joy, and purpose. Being the panganay means I carry responsibility, but it also means I carry the power to inspire. My journey may be different, but it is mine — and I will walk it with pride, courage, and faith</p>
+<p>I may not have met my parents in person, but that does not make me less worthy of love, belonging, or success. My story is unique, and it proves that even in pain, hope can grow. I am not a victim of my circumstances; I am the author of my future. Every challenge I face is shaping me into someone stronger, wiser, and more compassionate.
+
+I choose to rise above the hurt. I choose to believe in myself. I choose to create a life filled with meaning, joy, and purpose. Being the panganay means I carry responsibility, but it also means I carry the power to inspire. My journey may be different, but it is mine — and I will walk it with pride, courage, and faith</p><br>
+
+
+
+<p>My story begins with a family that didn’t follow the traditional path. My parents broke up when I was younger, and since then, I’ve lived with the reality of having long-distance parents. It wasn’t always easy — birthdays, holidays, and milestones often felt incomplete, with one parent present and the other far away. But through that experience, I learned resilience. I discovered how to adapt to change, how to hold onto love even when it’s stretched across miles, and how to build my own sense of stability in the middle of uncertainty.
+
+Growing up in this situation taught me the importance of communication. I became someone who values honesty, patience, and effort in relationships, because I know firsthand how distance can test bonds. It also gave me empathy — I understand what it means to miss someone deeply, and I carry that understanding into how I treat others.
+
+At the same time, it shaped my independence. I learned to rely on myself, to make decisions, and to grow without always having both parents around. That independence became a strength, helping me face challenges with courage and determination.
+
+Today, I see my family story not as a limitation but as a foundation. It gave me perspective, maturity, and a drive to create meaningful connections in my own life. I’m someone who believes that love and family don’t have to fit a perfect mold — they can be messy, complicated, and still incredibly powerful. My journey with long-distance parents is part of who I am, and it continues to inspire me to value closeness, cherish moments, and build bridges where distance exists</p>
 
 
                 
@@ -245,6 +299,7 @@ I choose to rise above the hurt. I choose to believe in myself. I choose to crea
             <div class="skill-card">
                 <h3>PEOPLE AROUND ME</h3>
                 <p>My family is very special to me. I live with my lola Nena, who takes care of us with kindness. My kuya Richard is my older brother, and he guides me like a role model. I also have two cousins, Andrew and Zaric, who make our days lively and full of fun. Together, they make my life happier and more meaningful.</p>
+
             </div>
             <div class="skill-card">
                 <h3>SPECIAL PEOPLE OF MY LIFE</h3>
@@ -291,17 +346,33 @@ Avoiding distractions: Studying in a quiet place without phones or social media.
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Get In Touch</h2>
+        <h2>MY CONTACTS</h2>
         <form class="contact-form" id="contactForm">
-            <input type="text" id="Eunice Gabrielle Tabanao" placeholder="Your Name" required>
-            <input type="email" id="eunicegabrielletabanao@gmail.com" placeholder="Your Email" required>
-            <textarea id="Every challenge you face is not a wall, but a doorway to growth. The setbacks you encounter are not signs of weakness, but reminders of your resilience. Keep moving forward, even when the path feels uncertain, because every step you take brings you closer to the version of yourself you’re meant to become. Believe in your strength, trust the process, and never forget — you are capable of more than you imagine." rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+            <input type="text" id="Eunice Gabrielle Tabanao" placeholder="Number: 09066452104" required>
+            <input type="email" id="eunicegabrielletabanao@gmail.com" placeholder="Email: eunicegabrielletabanao@gmail.com" required>
+            <input type="text" placeholder="Address: Laperas,Sulop Davao Del Sur" required>
+            <input type="text" placeholder="Facebook: Eunice Gabrielle Tabanao" required>
+            <input type="text" placeholder="Instagram: swty_nicie" required>
+            <input type="text" placeholder="Tiktok: nicifinie" required>
+            
+            <textarea rows="1" placeholder="Telegram: eunice Tabanao" required></textarea>
+            <button type="submit" class="btn">NONOLIANS</button>
         </form>
     </section>
 
+    <!-- ✅ NEW FINAL PAGE WITH 1 PICTURE -->
+    <section id="school" class="school">
+        <h2>MY SCHOOL </h2>
+        <!-- You can replace this URL with your own image file -->
+        <img src="pic/s.jpg">
+        <p style="color: lightpink; margin-top: 1.5rem; font-size: 1.1rem; width: 20%;">
+            “Our school is more than just classrooms and books — it’s a second home where we learn, grow, and build memories that last a lifetime.Within these walls, we discover our passions, nurture our talents, and form friendships that shape who we are. Every lesson taught, every smile shared, and every challenge overcome becomes part of the story that makes our school a place of pride, hope, and endless possibilities 💖
+        </p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Eunice Gabrielle Tabanao. All rights reserved.</p>
+        <p>&copy; 2026 Eunice Gabrielle Tabanao | All Rights Reserved</p>
     </footer>
 
     <!-- JavaScript -->
@@ -309,21 +380,15 @@ Avoiding distractions: Studying in a quiet place without phones or social media.
         // Greet Button Function
         const greetBtn = document.getElementById('greetBtn');
         greetBtn.addEventListener('click', function() {
-            alert('👋 Hello! Thanks for visiting my website!');
+            alert('👋 hi nonolians,daghang salamat sa pag adto sakong website hehe!');
         });
 
         // Contact Form Handler
         const contactForm = document.getElementById('contactForm');
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            if(name && email && message) {
-                alert(`✅ Thank you ${name}! Your message has been received.\nWe will reply to ${email} soon.`);
-                contactForm.reset();
-            }
+            alert(`✅ Thank you! Your message has been received.\nWe will reply soon.`);
+            contactForm.reset();
         });
 
         // Logo Image Change Example
